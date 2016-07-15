@@ -40,7 +40,7 @@ main{
 }
 
 main{
-	margin-top: 107px;
+	margin-top: 72px;
 	article{
 		padding: 0 5px 0;
 		.title{
@@ -66,6 +66,60 @@ main{
 				display: inline-block;
 				top: 2px;
 			}
+		}
+		.feel {
+			img {
+				width: 100%;
+			}
+		}
+		.healing {
+			.healing-num {
+				display: inline-block;
+				img {
+			    width: 128px;
+			    margin-left: 2px;
+			    position: relative;
+			    top: 5px;
+				}
+			}
+			.share-btn {
+		    position: relative;
+		    width: 176px;
+		    margin: 15px auto;
+			}
+		}
+		.other {
+			border: 2px solid #4CC1D2;
+			border-radius: 10px;
+			font-size: 0;
+	    margin: 16px 0;
+			li {
+				display: inline-block;
+				width: 50%;
+				&.active {
+					a {
+						background: #4CC1D2;
+						color: #FFF;
+					}
+				}
+			}
+			a {
+				display: block;
+				color: #4CC1D2;
+				font-size: 18px;
+				padding: 7px 0;
+		    text-align: center;
+		    transition: .3s;
+			}
+		}
+		.related-video {
+
+		}
+		.message {
+			display: none;
+		}
+		.article-intro {
+			font-size: 16px;
 		}
 		.association{
 			font-size: 0;
@@ -555,11 +609,6 @@ main{
 
 
 
-#content{
-	margin-top: 10px;
-	padding: 0 5px;
-	overflow: hidden;  //清掉屬性
-}
 #content, .carousel{
 	// @extend %block;
 	// padding: rhythm(2) 0;
@@ -567,75 +616,26 @@ main{
 	// max-width: $pageWidth;
 }
 #content{
+	// margin-top: 10px;
+	// padding: 0 5px;
+	max-width: 720px;
+	margin: 0 auto;
+	overflow: hidden;  //清掉屬性
 	.list{
-		width: 48.7%;
-		margin-left: 0;
-		margin-right: 0;
+		// width: 48.7%;
+		// margin-left: 0;
+		// margin-right: 0;
 		&:nth-of-type(even){
-			float: right;
+			// float: right;
 			// margin-right: 0;
 		}
 		&:nth-of-type(odd){
-			float: left;
+			// float: left;
 			// margin-right: 0;
 		}
 	}
 }
-.content-right{
-	display: none;
-}
-@include breakpoint(375px){
-	#content{
-		.list{
-			// width: 47%;
-		}
-	}
-}
-@include breakpoint(461px){
-	#content{
-		.list{
-			width: 48.97%;
-		}
-	}
-	main article .video-ad span{
-		font-size: 16px;
-	}
-}
-@include breakpoint(588px){
-	#content{
-		.list{
-			width: 49.21%;
-		}
-	}
-}
-@include breakpoint(724px){
-	#content{
-		.list{
-			width: 49.36%;
-		}
-	}
-}
-@include breakpoint(867px){
-	#content{
-		.list{
-			width: 49.5%;
-		}
-	}
-}
-@include breakpoint(745px){
-	#content{
-		.list{
-			// width: 48.6%;
-		}
-	}
-}
-@include breakpoint(775px){
-	#content{
-		.list{
-			// width: 48.65%;
-		}
-	}
-}
+
 @include breakpoint(900px){
 	.association-link-all{
 		.link-content-title{
@@ -645,48 +645,8 @@ main{
 		}
 	}
 }
-@include breakpoint(910px){
-	#content{
-		.list{
-			// width: 48.85%;
-		}
-	}
-}
+
 @include breakpoint(768px){
-	.phone-icon{
-		display: none;
-	}
-	.loading{
-		// margin-top: 15px;
-		// width: 40px;
-		// height: 40px;
-	}
-	#content{
-		.list{
-			background: #1B1B1B;
-			.info{
-				h3{
-					font-size: 18px;
-				}
-			}
-			.author{
-				margin-bottom: 2px;
-			}
-			.author, .view{
-				font-size: 15px
-			}	
-		}
-	}
-	main .share{
-		.share-icon{
-			.fb{
-				width: 100%;
-			}
-			.line{
-				display: none;
-			}
-		}
-	}
 	.association-link-all{
 		background-color: rgba(0, 0, 0, .7);
 		.association-link-all-content{
@@ -725,340 +685,23 @@ main{
 			}
 		}
 	}
-	// .loading {
-	// 	.mobile{
-	// 		display: block;
-	// 	}
-	// 	.desktop{
-	// 		display: none;
-	// 	}
-	// }
 }
-@include breakpoint(1085px){
-	#content{
-		.list{
-			// @include span(6);
-			// width: 24%;
-			// margin-left: 5px;
-			// margin-right: 5px;
-			// &:nth-child(even){
-			// 	float: left;
-			// }
-			// &:nth-child(odd){
-			// 	float: left;
-			// }
-		}
-		.more-list-content{
-			// margin: 0 -5px;
-		}
-	}
-}
-// @include breakpoint(1024px){
-// 	#menuBtn{
-// 		display: block;
-// 	}
-// }
-@include breakpoint(1024px){
-	#menuBtn{
-		display: block;
-	}
-	nav{
-		display: block;
-	}
-	.info-header{
-		.publication{
-			.info-icon{
-				// top: 8px;
-			}
-		}
-		.search{
-			display: none;
-		}
-		.sort{
-			display: none;
-		}
-		.user{
-			display: none;
-		}
-	}
-}
-@include breakpoint(1050px){
-	#menuBtn{
-		display: none;
-	}
-	nav{
-		display: none;
-	}
-	.info-header{
-		.publication{
-			.info-icon{
-				top: 8px;
-			}
-		}
-		.search{
-			display: inline-block;
-		}
-		.sort{
-			display: inline-block;
-		}
-		.user{
-			display: inline-block;
-		}
-	}
-}
-@include breakpoint(1050px){
-	.header-top{
-		position: relative;
-		width: 1050px;
-		margin: 0 auto;
-	}
-	header h1 .logo{
-	    margin-left: 0;
-	}
 
-	.menu-swiper-container{
-		width: 1050px;
-		margin: 0 auto;
-	}
-	#menuBtn{
-		display: none;
-	}
-	.slider{
-		// width: 1200px;
-		// margin: 0 auto;
-		display: none;
-		position: relative;
-		overflow: hidden;
-		@include span(12);
-		width: 100%;
-		margin: 0;
-		#owl-demo{
-			// @include span(12);
-			// display: none;
-		}
-		.slide-title{
-			position: absolute;
-			width: 100%;
-			bottom: 0;
-			margin: 0;
-			padding: 10px 0 10px 10px;
-			background: rgba(0, 0, 0, 0.9);
-		}
-		.owl-pagination{
-			top: -45px;
-		}
-		
-	}
-	.slider-pc{
-		display: block;
-		background: rgba(0, 0, 0, 0.9);
-		img{
-			width: 100%;
-		}
-		.slider-main{
-			position: relative;
-			@include span(12);
-			width: 50%;
-			margin: 0;
-		}
-		.slider-sub{
-			@include span(12);
-			width: 50%;
-			margin: 0;
-			.sub-list{
-				position: relative;
-				@include span(6);
-				width: 50%;
-				margin: 0;
-			}
-		}
-		.slide-title{
-			position: absolute;
-			width: 100%;
-			bottom: 0;
-			margin: 0;
-			padding: 10px 0 10px 10px;
-			font-size: 16px;
-			background: rgba(0, 0, 0, 0.9);
-		}
-		&::after{
-			content: '';
-			display: table;
-			clear: both;
-		}
-	}
 
-	main{
-		width: 1050px;
-		margin-left: auto;
-		margin-right: auto;
-		// padding-left: 10px;
-		.share{
-			margin: 0;
-		}
-		.author-info{
-			margin: 0;
-		}
-		.more .more-list{
-			margin: 0;
+
+
+
+
+
+@include breakpoint(500px){
+	main article .healing  {
+		.share-btn {
+			display: inline-block;
+			width: 125px;
+		  margin-left: 10px;
+		  position: relative;
+		  top: 14px;
 		}
 	}
 	
-	#content{
-		display: inline-block;
-		@include span(16);
-		// max-width: 730px;
-		padding-top: 1px;
-		width: 730px;
-		margin: 0 auto;
-		padding-left: 0;
-		padding-right: 0;
-		overflow: visible;
-		article{
-			padding-left: 0;
-			padding-right: 0;
-			.association{
-				.line{
-					background: #2BCDFA;
-					img{
-						display: none
-					}
-					i{
-						display: block;
-					}
-				}
-				// .twitter{
-				// 	background: ;
-				// }
-			}
-		}
-		.viewers{
-			// margin-top: 20px;
-			padding-top: 0;
-		}
-		.list{
-			@include span(6);
-			// width: 24.16105%;
-			width: 23.95%;
-			margin-left: 0;
-			margin-right: 10px;
-			// margin-top: 10px;
-			margin-bottom: 10px;
-			float: none;
-			.info{
-				h3{
-					line-height: 20px;
-					height: 60px;
-					font-size: 15px;
-				}
-				.view{
-					font-size: 12px;
-				}
-			}
-			&:nth-of-type(odd){
-				float: left;
-				// margin-right: 0;
-			}
-			&:nth-of-type(even){
-				float: left;
-				// margin-right: 0;
-			}
-		}
-		.list:nth-of-type(4n){
-			margin-right: 0;
-		}
-
-	}
-	main{
-		.like{
-			.like-icon{
-				.like-icon-left{
-					position: relative;
-					.right-icon{
-						left: 60%;
-					}
-				}
-				.like-icon-right{
-					position: relative;
-					.left-icon{
-						position: absolute;
-						right: 60%;
-					}
-				}
-			}
-		}
-	}
-	.content-right{
-		display: inline-block;
-		@include span(8);
-		width: 33.5%;
-		max-width: 320px;
-		margin-left: 0;
-		margin-right: 0;
-		padding-left: 20px;
-		// width: 33.2%;
-		// background: #dac;
-		.list{
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-			border: none;
-			background: none;
-		}
-		.fixed-area{
-			width: 352px;
-			clear: both;
-		}
-	}
-	.association-link-all{
-		// .line{
-		// 	display: none;
-		// }
-	}
-	.loading {
-		// .mobile{
-		// 	display: none;
-		// }
-		// .desktop{
-		// 	display: block;
-		// }
-	}
 }
-
-// @include breakpoint(1130px){
-// 	#content{
-// 		.list{
-// 			width: 24.1086%;
-// 		}
-// 	}
-// }
-
-
-// @include breakpoint(1024px){
-// 	#content{
-// 		.list{
-// 			width: 24.23%;
-// 		}
-// 	}
-// }
-// @include breakpoint(1054px){
-// 	#content{
-// 		.list{
-// 			width: 24.25%;
-// 		}
-// 	}
-// }
-// @include breakpoint(1149px){
-// 	#content{
-// 		.list{
-// 			width: 24.3%;
-// 		}
-// 	}
-// }
-// @include breakpoint(1200px){
-// 	#content{
-// 		.list{
-// 			width: 24.33%;
-// 		}
-// 	}
-// }

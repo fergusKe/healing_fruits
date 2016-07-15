@@ -43,7 +43,7 @@ main {
 }
 
 main {
-  margin-top: 107px;
+  margin-top: 72px;
 }
 main article {
   padding: 0 5px 0;
@@ -71,6 +71,51 @@ main article .report img {
   position: relative;
   display: inline-block;
   top: 2px;
+}
+main article .feel img {
+  width: 100%;
+}
+main article .healing .healing-num {
+  display: inline-block;
+}
+main article .healing .healing-num img {
+  width: 128px;
+  margin-left: 2px;
+  position: relative;
+  top: 5px;
+}
+main article .healing .share-btn {
+  position: relative;
+  width: 176px;
+  margin: 15px auto;
+}
+main article .other {
+  border: 2px solid #4CC1D2;
+  border-radius: 10px;
+  font-size: 0;
+  margin: 16px 0;
+}
+main article .other li {
+  display: inline-block;
+  width: 50%;
+}
+main article .other li.active a {
+  background: #4CC1D2;
+  color: #FFF;
+}
+main article .other a {
+  display: block;
+  color: #4CC1D2;
+  font-size: 18px;
+  padding: 7px 0;
+  text-align: center;
+  transition: .3s;
+}
+main article .message {
+  display: none;
+}
+main article .article-intro {
+  font-size: 16px;
 }
 main article .association {
   font-size: 0;
@@ -344,7 +389,7 @@ main .more .more-list::after, main .more .more-list::before {
   -ms-transform: translateY(8px) rotate(45deg);
   -webkit-transform: translateY(8px) rotate(45deg);
   transform: translateY(8px) rotate(45deg);
-  background-color: #FFF;
+  background-color: #000;
 }
 .association-link-all .association-link-closeBtn:after {
   content: '';
@@ -355,7 +400,7 @@ main .more .more-list::after, main .more .more-list::before {
   -ms-transform: translateY(-8px) rotate(-45deg);
   -webkit-transform: translateY(-8px) rotate(-45deg);
   transform: translateY(-8px) rotate(-45deg);
-  background-color: #FFF;
+  background-color: #000;
 }
 .association-link-all .link-content-title {
   font-size: 16px;
@@ -466,12 +511,6 @@ main .more .more-list::after, main .more .more-list::before {
   background: #808080;
 }
 
-#content {
-  margin-top: 10px;
-  padding: 0 5px;
-  overflow: hidden;
-}
-
 #content, .carousel {
   max-width: 100%;
   margin-left: auto;
@@ -483,46 +522,12 @@ main .more .more-list::after, main .more .more-list::before {
   clear: both;
 }
 
-#content .list {
-  width: 48.7%;
-  margin-left: 0;
-  margin-right: 0;
-}
-#content .list:nth-of-type(even) {
-  float: right;
-}
-#content .list:nth-of-type(odd) {
-  float: left;
+#content {
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.content-right {
-  display: none;
-}
-
-@media (min-width: 461px) {
-  #content .list {
-    width: 48.97%;
-  }
-
-  main article .video-ad span {
-    font-size: 16px;
-  }
-}
-@media (min-width: 588px) {
-  #content .list {
-    width: 49.21%;
-  }
-}
-@media (min-width: 724px) {
-  #content .list {
-    width: 49.36%;
-  }
-}
-@media (min-width: 867px) {
-  #content .list {
-    width: 49.5%;
-  }
-}
 @media (min-width: 900px) {
   .association-link-all .link-content-title {
     font-size: 16px;
@@ -530,30 +535,6 @@ main .more .more-list::after, main .more .more-list::before {
   }
 }
 @media (min-width: 768px) {
-  .phone-icon {
-    display: none;
-  }
-
-  #content .list {
-    background: #1B1B1B;
-  }
-  #content .list .info h3 {
-    font-size: 18px;
-  }
-  #content .list .author {
-    margin-bottom: 2px;
-  }
-  #content .list .author, #content .list .view {
-    font-size: 15px;
-  }
-
-  main .share .share-icon .fb {
-    width: 100%;
-  }
-  main .share .share-icon .line {
-    display: none;
-  }
-
   .association-link-all {
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -591,246 +572,12 @@ main .more .more-list::after, main .more .more-list::before {
     margin-left: 1px;
   }
 }
-@media (min-width: 1024px) {
-  #menuBtn {
-    display: block;
-  }
-
-  nav {
-    display: block;
-  }
-
-  .info-header .search {
-    display: none;
-  }
-  .info-header .sort {
-    display: none;
-  }
-  .info-header .user {
-    display: none;
-  }
-}
-@media (min-width: 1050px) {
-  #menuBtn {
-    display: none;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .info-header .publication .info-icon {
-    top: 8px;
-  }
-  .info-header .search {
+@media (min-width: 500px) {
+  main article .healing .share-btn {
     display: inline-block;
-  }
-  .info-header .sort {
-    display: inline-block;
-  }
-  .info-header .user {
-    display: inline-block;
-  }
-}
-@media (min-width: 1050px) {
-  .header-top {
+    width: 125px;
+    margin-left: 10px;
     position: relative;
-    width: 1050px;
-    margin: 0 auto;
-  }
-
-  header h1 .logo {
-    margin-left: 0;
-  }
-
-  .menu-swiper-container {
-    width: 1050px;
-    margin: 0 auto;
-  }
-
-  #menuBtn {
-    display: none;
-  }
-
-  .slider {
-    display: none;
-    position: relative;
-    overflow: hidden;
-    width: 49.1666666667%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 100%;
-    margin: 0;
-  }
-  .slider .slide-title {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    margin: 0;
-    padding: 10px 0 10px 10px;
-    background: rgba(0, 0, 0, 0.9);
-  }
-  .slider .owl-pagination {
-    top: -45px;
-  }
-
-  .slider-pc {
-    display: block;
-    background: rgba(0, 0, 0, 0.9);
-  }
-  .slider-pc img {
-    width: 100%;
-  }
-  .slider-pc .slider-main {
-    position: relative;
-    width: 49.1666666667%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 50%;
-    margin: 0;
-  }
-  .slider-pc .slider-sub {
-    width: 49.1666666667%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 50%;
-    margin: 0;
-  }
-  .slider-pc .slider-sub .sub-list {
-    position: relative;
-    width: 24.1666666667%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 50%;
-    margin: 0;
-  }
-  .slider-pc .slide-title {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    margin: 0;
-    padding: 10px 0 10px 10px;
-    font-size: 16px;
-    background: rgba(0, 0, 0, 0.9);
-  }
-  .slider-pc::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-
-  main {
-    width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main .share {
-    margin: 0;
-  }
-  main .author-info {
-    margin: 0;
-  }
-  main .more .more-list {
-    margin: 0;
-  }
-
-  #content {
-    display: inline-block;
-    width: 65.8333333333%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    padding-top: 1px;
-    width: 730px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    overflow: visible;
-  }
-  #content article {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #content article .association .line {
-    background: #2BCDFA;
-  }
-  #content article .association .line img {
-    display: none;
-  }
-  #content article .association .line i {
-    display: block;
-  }
-  #content .viewers {
-    padding-top: 0;
-  }
-  #content .list {
-    width: 24.1666666667%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 23.95%;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    float: none;
-  }
-  #content .list .info h3 {
-    line-height: 20px;
-    height: 60px;
-    font-size: 15px;
-  }
-  #content .list .info .view {
-    font-size: 12px;
-  }
-  #content .list:nth-of-type(odd) {
-    float: left;
-  }
-  #content .list:nth-of-type(even) {
-    float: left;
-  }
-  #content .list:nth-of-type(4n) {
-    margin-right: 0;
-  }
-
-  main .like .like-icon .like-icon-left {
-    position: relative;
-  }
-  main .like .like-icon .like-icon-left .right-icon {
-    left: 60%;
-  }
-  main .like .like-icon .like-icon-right {
-    position: relative;
-  }
-  main .like .like-icon .like-icon-right .left-icon {
-    position: absolute;
-    right: 60%;
-  }
-
-  .content-right {
-    display: inline-block;
-    width: 32.5%;
-    float: left;
-    margin-left: 0.4166666667%;
-    margin-right: 0.4166666667%;
-    width: 33.5%;
-    max-width: 320px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 20px;
-  }
-  .content-right .list {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    border: none;
-    background: none;
-  }
-  .content-right .fixed-area {
-    width: 352px;
-    clear: both;
+    top: 14px;
   }
 }
