@@ -1,0 +1,318 @@
+@import "util";
+main{
+	@include adjust-font-size-to ($base-font-size);
+}
+main{
+	margin-top: 81px;
+
+}
+.content-menu{
+	font-size: 0;
+	ul{
+		li{
+			display: inline-block;
+			width: 25%;
+			@include box-sizing(border-box);
+			height: 40px;
+			a{
+				display: block;
+				font-size: 14px;
+				height: 40px;
+				color: #444;
+				text-align: center;
+			    line-height: 37px;
+				background: #CCC;
+				border-top: 3px solid #CCC;
+				// border-bottom: 3px solid #DCDCDC;
+				// @include box-sizing(border-box);
+			}
+			&~li{
+				border-left: 1px solid #777;
+				a{
+					
+					// border-top: 5px solid #793;
+				}
+			}
+			&.selected{
+				a{
+					border-top: 3px solid #428AE4;
+					background: transparent;
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+#content{
+	margin-top: 50px;
+	padding: 0 5px;
+	overflow: hidden;  //清掉屬性
+}
+#content, .carousel{
+	// @extend %block;
+	// padding: rhythm(2) 0;
+	@include container();
+	// max-width: $pageWidth;
+}
+#content{
+	.input-title{
+		width: 100%;
+	    padding-left: 5px;
+	    height: 30px;
+	    font-size: 16px;
+	    color: #444;
+	}
+	.insert{
+		font-size: 0;
+		margin-top: 20px;
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				width: 100px;
+				height: 30px;
+				background: #F8F8F8;
+				// border: 1px solid #555;
+				font-size: 14px;
+				color: #444;
+				text-align: center;
+				line-height: 30px;
+			}
+			&~li{
+				margin-left: 10px;
+			}
+			& a:hover{
+				opacity: .9;
+			}
+		}
+	}
+	.edit{
+		height: 500px;
+		background: #444;
+		text-align: center;
+		font-size: 26px;
+		line-height: 500px;
+		margin-top: 15px;
+	}
+	.mybtn{
+		// margin: 0 auto;
+		margin-top: 30px;
+		font-size: 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			font-size: 14px;
+			text-align: center;
+		}
+		.preview{
+			a{
+				display: block;
+				width: 150px;
+				height: 30px;
+				line-height: 30px;
+				color: #444;
+				background: #FFF;
+			}
+		}
+		.submit{
+			a{
+				display: block;
+				width: 150px;
+				height: 30px;
+				line-height: 30px;
+				color: #FFF;
+				background: #004A7F;
+			}
+		}
+		& a:hover{
+			opacity: .8;
+		}
+	}
+}
+.content-right{
+	display: none;
+}
+
+@include breakpoint(768px){
+	.phone-icon{
+		display: none;
+	}
+}
+@include breakpoint(1120px){
+
+	main{
+		max-width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#content{
+		display: inline-block;
+		@include span(16);
+		max-width: 730px;
+		padding-top: 1px;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+		overflow: visible;
+		article{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		// .ad{
+		// 	display: none;
+		// }
+		.viewers{
+			// margin-top: 20px;
+			padding-top: 0;
+		}
+		.list{
+			@include span(6);
+			// width: 24.16105%;
+			width: 23.95%;
+			margin-left: 0;
+			margin-right: 10px;
+			// margin-top: 10px;
+			margin-bottom: 10px;
+			float: none;
+			.info{
+				h3{
+					line-height: 20px;
+					height: 60px;
+					font-size: 15px;
+				}
+				.view{
+					font-size: 12px;
+				}
+			}
+			&:nth-child(odd){
+				float: left;
+				// margin-right: 0;
+			}
+			&:nth-child(even){
+				float: left;
+				// margin-right: 0;
+			}
+		}
+		.list:nth-child(4n){
+			margin-right: 0;
+		}
+
+	}
+	main{
+		.like{
+			.like-icon{
+				.like-icon-left{
+					position: relative;
+					.right-icon{
+						left: 60%;
+					}
+				}
+				.like-icon-right{
+					position: relative;
+					.left-icon{
+						position: absolute;
+						right: 60%;
+					}
+				}
+			}
+		}
+	}
+	.content-right{
+		display: inline-block;
+		@include span(8);
+		width: 33.5%;
+		max-width: 380px;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 50px;
+		padding-left: 20px;
+		.group{
+			border: 1px solid #444;
+			
+			h2{
+				padding: 5px 0 5px 10px;
+				background: #AAA;
+				color: #444;
+				cursor: pointer;
+			}
+			.group-content{
+				padding: 10px;
+			}
+			&~.group{
+				margin-top: 10px;
+			}
+		}
+		.Thumbnail{
+			.img-update{
+				height: 200px;
+			    border: 3px dashed #FFF;
+			    background: #AAA;
+			}
+			p{
+				margin-top: 5px;
+			}
+		}
+		.tag-Thumbnail{
+			input{
+				width: 269px;
+			    height: 25px;
+			    border-radius: 5px;
+			    border: 0;
+			}
+			button{
+				    background: #1E89FE;
+				    border: 0;
+				    width: 60px;
+				    height: 25px;
+				    border-radius: 5px;
+			}
+		}
+	}
+}
+
+// @include breakpoint(1130px){
+// 	#content{
+// 		.list{
+// 			width: 24.1086%;
+// 		}
+// 	}
+// }
+
+
+// @include breakpoint(1024px){
+// 	#content{
+// 		.list{
+// 			width: 24.23%;
+// 		}
+// 	}
+// }
+// @include breakpoint(1054px){
+// 	#content{
+// 		.list{
+// 			width: 24.25%;
+// 		}
+// 	}
+// }
+// @include breakpoint(1149px){
+// 	#content{
+// 		.list{
+// 			width: 24.3%;
+// 		}
+// 	}
+// }
+// @include breakpoint(1200px){
+// 	#content{
+// 		.list{
+// 			width: 24.33%;
+// 		}
+// 	}
+// }

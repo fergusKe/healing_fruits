@@ -1,0 +1,255 @@
+main {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+main {
+  margin-top: 81px;
+}
+
+.content-menu {
+  font-size: 0;
+}
+.content-menu ul li {
+  display: inline-block;
+  width: 25%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+}
+.content-menu ul li a {
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  color: #444;
+  text-align: center;
+  line-height: 37px;
+  background: #CCC;
+  border-top: 3px solid #CCC;
+}
+.content-menu ul li ~ li {
+  border-left: 1px solid #777;
+}
+.content-menu ul li.selected a {
+  border-top: 3px solid #428AE4;
+  background: transparent;
+  color: #FFF;
+}
+
+#content {
+  margin-top: 50px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+#content, .carousel {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content:after, .carousel:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#content .input-title {
+  width: 100%;
+  padding-left: 5px;
+  height: 30px;
+  font-size: 16px;
+  color: #444;
+}
+#content .insert {
+  font-size: 0;
+  margin-top: 20px;
+}
+#content .insert li {
+  display: inline-block;
+}
+#content .insert li a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background: #F8F8F8;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  line-height: 30px;
+}
+#content .insert li ~ li {
+  margin-left: 10px;
+}
+#content .insert li a:hover {
+  opacity: .9;
+}
+#content .edit {
+  height: 500px;
+  background: #444;
+  text-align: center;
+  font-size: 26px;
+  line-height: 500px;
+  margin-top: 15px;
+}
+#content .mybtn {
+  margin-top: 30px;
+  font-size: 0;
+  text-align: center;
+}
+#content .mybtn li {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+}
+#content .mybtn .preview a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  color: #444;
+  background: #FFF;
+}
+#content .mybtn .submit a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  color: #FFF;
+  background: #004A7F;
+}
+#content .mybtn a:hover {
+  opacity: .8;
+}
+
+.content-right {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .phone-icon {
+    display: none;
+  }
+}
+@media (min-width: 1120px) {
+  main {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #content {
+    display: inline-block;
+    width: 65.8333333333%;
+    float: left;
+    margin-left: 0.4166666667%;
+    margin-right: 0.4166666667%;
+    max-width: 730px;
+    padding-top: 1px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: visible;
+  }
+  #content article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #content .viewers {
+    padding-top: 0;
+  }
+  #content .list {
+    width: 24.1666666667%;
+    float: left;
+    margin-left: 0.4166666667%;
+    margin-right: 0.4166666667%;
+    width: 23.95%;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: none;
+  }
+  #content .list .info h3 {
+    line-height: 20px;
+    height: 60px;
+    font-size: 15px;
+  }
+  #content .list .info .view {
+    font-size: 12px;
+  }
+  #content .list:nth-child(odd) {
+    float: left;
+  }
+  #content .list:nth-child(even) {
+    float: left;
+  }
+  #content .list:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  main .like .like-icon .like-icon-left {
+    position: relative;
+  }
+  main .like .like-icon .like-icon-left .right-icon {
+    left: 60%;
+  }
+  main .like .like-icon .like-icon-right {
+    position: relative;
+  }
+  main .like .like-icon .like-icon-right .left-icon {
+    position: absolute;
+    right: 60%;
+  }
+
+  .content-right {
+    display: inline-block;
+    width: 32.5%;
+    float: left;
+    margin-left: 0.4166666667%;
+    margin-right: 0.4166666667%;
+    width: 33.5%;
+    max-width: 380px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  .content-right .group {
+    border: 1px solid #444;
+  }
+  .content-right .group h2 {
+    padding: 5px 0 5px 10px;
+    background: #AAA;
+    color: #444;
+    cursor: pointer;
+  }
+  .content-right .group .group-content {
+    padding: 10px;
+  }
+  .content-right .group ~ .group {
+    margin-top: 10px;
+  }
+  .content-right .Thumbnail .img-update {
+    height: 200px;
+    border: 3px dashed #FFF;
+    background: #AAA;
+  }
+  .content-right .Thumbnail p {
+    margin-top: 5px;
+  }
+  .content-right .tag-Thumbnail input {
+    width: 269px;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+  }
+  .content-right .tag-Thumbnail button {
+    background: #1E89FE;
+    border: 0;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+  }
+}
