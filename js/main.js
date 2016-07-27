@@ -177,40 +177,40 @@ $(function() {
 		    loop: true
 		});
 
-		var swiper = new Swiper('.search-swiper-container', {
-		    pagination: '.swiper-pagination',
-		    slidesPerView: 'auto',
-		    centeredSlides: false,
-		    paginationClickable: true,
-		    spaceBetween: 0
-		});
+		// var swiper = new Swiper('.search-swiper-container', {
+		//     pagination: '.swiper-pagination',
+		//     slidesPerView: 'auto',
+		//     centeredSlides: false,
+		//     paginationClickable: true,
+		//     spaceBetween: 0
+		// });
 
-		var swiper = new Swiper('.menu-swiper-container', {
-		    pagination: '.swiper-pagination',
-		    slidesPerView: 'auto',
-		    centeredSlides: false,
-		    paginationClickable: true,
-		    spaceBetween: 0
-		});
+		// var swiper = new Swiper('.menu-swiper-container', {
+		//     pagination: '.swiper-pagination',
+		//     slidesPerView: 'auto',
+		//     centeredSlides: false,
+		//     paginationClickable: true,
+		//     spaceBetween: 0
+		// });
 
-		var owl = $("#owl-menu");
+		// var owl = $("#owl-menu");
  
-		owl.owlCarousel({
+		// owl.owlCarousel({
 
-			navigation : false,
+		// 	navigation : false,
 
-			itemsCustom : [
-				[0, 3],
-				[450, 4],
-				[600, 5],
-				[700, 5],
-				[800, 6],
-				[1000, 8],
-				[1200, 9],
-				[1400, 10]
-			]
+		// 	itemsCustom : [
+		// 		[0, 3],
+		// 		[450, 4],
+		// 		[600, 5],
+		// 		[700, 5],
+		// 		[800, 6],
+		// 		[1000, 8],
+		// 		[1200, 9],
+		// 		[1400, 10]
+		// 	]
 
-		});
+		// });
 
 		
 
