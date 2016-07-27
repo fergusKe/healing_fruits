@@ -1,7 +1,7 @@
 main {
-  margin-top: 80px;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 133px;
 }
 
 .slider {
@@ -203,6 +203,8 @@ main {
   .slider-pc {
     display: block;
     background: rgba(0, 0, 0, 0.9);
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .slider-pc img {
     width: 100%;
@@ -213,7 +215,7 @@ main {
     float: left;
     margin-left: 0.4166666667%;
     margin-right: 0.4166666667%;
-    width: 50%;
+    width: 75%;
     margin: 0;
   }
   .slider-pc .slider-sub {
@@ -221,16 +223,16 @@ main {
     float: left;
     margin-left: 0.4166666667%;
     margin-right: 0.4166666667%;
-    width: 50%;
+    width: 25%;
     margin: 0;
   }
   .slider-pc .slider-sub .sub-list {
     position: relative;
-    width: 24.1666666667%;
+    width: 49.1666666667%;
     float: left;
     margin-left: 0.4166666667%;
     margin-right: 0.4166666667%;
-    width: 50%;
+    width: 100%;
     margin: 0;
   }
   .slider-pc .slide-title {
